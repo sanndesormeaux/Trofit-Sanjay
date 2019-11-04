@@ -1,0 +1,122 @@
+html body {
+  font-family: "Dosis";
+  text-align: center;
+  background-color: #b9b9b9;
+  margin: 0;
+}
+html body #return {
+  float: right;
+  border: solid #525252 1px;
+  height: 30px;
+  width: 50px;
+  margin: 4%;
+  line-height: 20px;
+  border-radius: 20px;
+  font-size: 40px;
+}
+html body #photo {
+  background-color: aliceblue;
+  border: solid #3333333b 2px;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+html body #pseudo {
+  font-size: 40px;
+}
+html body #profil {
+  background-color: aliceblue;
+  border: solid #3333333b 2px;
+  border-radius: 60px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  margin-top: 5%;
+  margin-left: 80%;
+}
+html body .box-group {
+  margin: auto;
+  width: 95%;
+  margin-top: 15%;
+}
+html body .box-group .large-box {
+  background-color: aliceblue;
+  flex-direction: column;
+  border: solid #3333333b 2px;
+  border-radius: 10px;
+  height: 100px;
+  line-height: 80px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+html body .vide {
+  height: 200px;
+}
+html body .pres {
+  margin: auto;
+  padding: 5%;
+}
+html body .container-row {
+  margin: auto;
+  display: flex;
+  height: 70px;
+  flex-direction: row;
+  flex-basis: 100px;
+}
+html body .container-row .attribut {
+  padding: 5%;
+  margin: auto;
+}
+html body .small-box {
+  margin: auto;
+  height: 20px;
+  width: 70%;
+  border: solid #525252 1px;
+  border-radius: 15px;
+}
+html body #pref {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
+}
+html body #pref .pref-box {
+  margin: auto;
+  border: solid #525252 1px;
+  border-radius: 110px;
+  height: 110px;
+  width: 110px;
+  line-height: 110px;
+  margin-bottom: 5%;
+}
+html body #container-run {
+  width: 100%;
+  height: 200px;
+}
+html body #container-run #running {
+  position: relative;
+  height: 100px;
+  width: 100%;
+  background-color: #d63d00;
+}
+html body #container-run #running .line1 {
+  height: 5px;
+  background-color: antiquewhite;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+html body #container-run #running .line2 {
+  height: 8px;
+  background-color: antiquewhite;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+html body #container-run #running .line3 {
+  height: 10px;
+  background-color: antiquewhite;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
