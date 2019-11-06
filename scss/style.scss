@@ -66,5 +66,16 @@ html{
         border-radius: 5px;
         background-color: $couleur4;
         transition: $transition;
+        z-index: 10;
     }
+}
+
+#more{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: $couleur4;
+    left: -100%;
+    transition: $transition;
+    z-index: 5;
 }

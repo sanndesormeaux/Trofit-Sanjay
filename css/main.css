@@ -48,6 +48,17 @@ html .exercices {
   border-radius: 5px;
   background-color: #33FF68;
   transition: 0.8s ease;
+  z-index: 10;
+}
+
+#more {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #33FF68;
+  left: -100%;
+  transition: 0.8s ease;
+  z-index: 5;
 }
 
 /*# sourceMappingURL=main.css.map */
