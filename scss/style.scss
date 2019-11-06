@@ -1,9 +1,12 @@
+@import "./variables";
+@import "./mixin";
+
 html{
     body{
         
         font-family: 'Dosis';
         text-align: center;
-        background-color: rgb(185, 185, 185);
+        background-color: $marron;
         margin:0;
 
         #return{
