@@ -47,7 +47,7 @@ html .exercices {
   height: 5px;
   border-radius: 5px;
   background-color: #33FF68;
-  transition: 0.8s ease;
+  transition: 1.5s;
   z-index: 10;
 }
 
