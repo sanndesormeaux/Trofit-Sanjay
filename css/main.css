@@ -1,17 +1,34 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import "./variables";
- *   |         ^^^^^^^^^^^^^
- *   '
- *   scss\style.scss 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import \"./variables\";\d\a   \2502          ^^^^^^^^^^^^^\a   \2575 \a   scss\\style.scss 1:9  root stylesheet";
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  background-color: #29201B;
+  color: white;
+  margin: 0;
 }
+html body {
+  width: 100%;
+  margin: 0;
+}
+html .container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+html .container-col {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+html .bouton {
+  border: 2px solid #33FF68;
+  text-align: center;
+  width: 70vw;
+}
+html .exercices {
+  height: 50vh;
+}
+
+/*# sourceMappingURL=main.css.map */
