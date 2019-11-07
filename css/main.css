@@ -20,15 +20,27 @@ html .container-col {
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
 }
 html .bouton {
-  border: 2px solid #33FF68;
+  border: 3px solid #33FF68;
+  border-radius: 10px;
   text-align: center;
-  width: 70vw;
+  width: 65vw;
+  margin: 5px auto 0 auto;
+  padding: 30px 0 30px 0;
 }
-html .exercices {
-  height: 50vh;
+html .full {
+  width: 100vw;
+  height: 90vh;
+  justify-content: space-around;
+}
+html .full h1 {
+  text-align: center;
+}
+html #exercice {
+  padding-top: 5vh;
+  text-align: center;
 }
 
 #burger {
@@ -59,6 +71,12 @@ html .exercices {
   left: -100%;
   transition: 0.8s ease;
   z-index: 5;
+  display: flex;
+}
+#more h1 {
+  text-align: center;
+  margin: 0;
+  color: #29201B;
 }
 
 /*# sourceMappingURL=main.css.map */

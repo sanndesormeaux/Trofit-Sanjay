@@ -15,9 +15,7 @@ html{
         margin: 0;
     }
 
-    h1{
-
-    }
+    
     
     h2{
     
@@ -35,20 +33,33 @@ html{
         margin: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: start;
     }
 
     .bouton{
-        border: 2px solid $couleur4;
+        border: 3px solid $couleur4;
+        border-radius: 10px;
         text-align: center;
-        width: 70vw;
+        width: 65vw;
+        margin: 5px auto 0 auto;
+        padding: 30px 0 30px 0;
     }
 
-    .exercices{
-        height: 50vh;
+    .full{
+        width: 100vw;
+        height: 90vh;
+        justify-content: space-around;
+
+        h1{
+            text-align: center;
+        }
+    }
+
+    #exercice{
+        padding-top: 5vh;
+        text-align: center;
     }
 }
-
 
 
 #burger{
@@ -80,4 +91,11 @@ html{
     left: -100%;
     transition: $transition;
     z-index: 5;
+    display: flex;
+    
+    h1{
+        text-align: center;
+        margin: 0;
+        color: $couleur1; 
+    }
 }

@@ -1,4 +1,4 @@
-var BMENU = false;
+var BMENU = true;
 
 function Burger(){
     var B1 = document.getElementById("B1");
@@ -26,3 +26,81 @@ function Burger(){
     }
     
 }
+
+// différents exercices
+
+var Hcorps = ["Pompes surélevées", "Dips au banc", "Haltère classique", "Haltères derrière la tête"];
+var Jambes = ["Squatt", "Chaise"];
+var Abdos = ["Abdominos", "Gainage"];
+
+var verif = false;
+
+function exercice(test){
+    var element = document.getElementById("exercice");
+
+    if (verif == true){
+        element.remove();
+        var para = document.createElement("div");
+        para.setAttribute("class", "container-col");
+        para.setAttribute("id","exercice");
+        document.body.appendChild(para);
+        var para = document.createElement("h1");
+        para.setAttribute("id","exoName");
+        document.getElementById("exercice").appendChild(para);
+    }
+
+    var exoName = document.getElementById("exoName");
+    var element = document.getElementById("exercice");
+    
+
+    if (test == "HautDuCorps"){
+        var longueur = Hcorps.length;
+        exoName.innerHTML = "HAUT DU CORPS BRAS";
+        verif = true;
+
+        for (i=0; i<longueur; i++){
+            var para = document.createElement("div");
+            para.setAttribute("class", "bouton");
+            var node = document.createTextNode(Hcorps[i]);
+            para.appendChild(node);
+            element.appendChild(para);
+        }
+    }
+    if (test == "JambesFesses"){
+        var longueur = Jambes.length;
+        exoName.innerHTML = "JAMBES / FESSIER";
+        verif = true;
+
+        for (i=0; i<longueur; i++){
+            var para = document.createElement("div");
+            para.setAttribute("class", "bouton");
+            var node = document.createTextNode(Jambes[i]);
+            para.appendChild(node);
+            element.appendChild(para);
+        }
+    }
+    if (test == "TroncAbdos"){
+        var longueur = Abdos.length;
+        exoName.innerHTML = "TRONC / ABODS";
+        verif = true;
+
+        for (i=0; i<longueur; i++){
+            var para = document.createElement("div");
+            para.setAttribute("class", "bouton");
+            var node = document.createTextNode(Abdos[i]);
+            para.appendChild(node);
+            element.appendChild(para);
+        }
+    }
+    if (test == "Jogg"){
+        para.setAttribute("class", "bouton");
+        var node = document.createTextNode(Jambes[i]);
+        para.appendChild(node);
+        element.appendChild(para);
+        verif = true;
+    }
+
+    Burger();
+}
+
+exercice("HautDuCorps");
