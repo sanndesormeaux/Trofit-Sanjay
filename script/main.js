@@ -4,7 +4,7 @@ function Burger(){
     var B1 = document.getElementById("B1");
     var B2 = document.getElementById("B2");
     var B3 = document.getElementById("B3");
-    var barres = document.getElementsByClassName("Bu");
+    var home = document.getElementById("home");
     var more = document.getElementById("more");
 
     if (BMENU == false){
@@ -13,6 +13,7 @@ function Burger(){
         B2.style.opacity = "0";
         B1.style.backgroundColor = "#29201B";
         B3.style.backgroundColor = "#29201B";
+        home.style.opacity = "1";
         more.style.left = "0%";
         BMENU = true;
     }else{
@@ -21,6 +22,7 @@ function Burger(){
         B2.style.opacity = "1";
         B1.style.backgroundColor = "#33FF68";
         B3.style.backgroundColor = "#33FF68";
+        home.style.opacity = "0";
         more.style.left = "-100%";
         BMENU = false;
     }

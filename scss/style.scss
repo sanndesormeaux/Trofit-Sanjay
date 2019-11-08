@@ -13,20 +13,36 @@ html{
     body{
         width: 100%;
         margin: 0;
+
+        #ourshead{
+            width: 65px;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+
+        #bubble{
+            width: 60vw;
+            padding: 10px 10px 10px 10px;
+            background-color: $couleur3;
+            border-radius: 15px;
+            position: absolute;
+            right: 5vw;
+            top: 10px;
+            color: black;
+        }
     }
 
-    
-    
-    h2{
-    
+    a{
+        text-decoration: none;
+        color: white;
     }
-
-    
 
     .container{
         margin: auto;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
     }
     
     .container-col{
@@ -34,6 +50,16 @@ html{
         display: flex;
         flex-direction: column;
         justify-content: start;
+    }
+
+    .circle-bouton{
+        border: 3px solid $couleur4;
+        border-radius: 100px;
+        height: 100px;
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .bouton{
@@ -45,6 +71,17 @@ html{
         padding: 30px 0 30px 0;
     }
 
+    .spe{
+        background-color: $couleur4;
+        color: $couleur1;
+        border-radius: 40px;
+    }
+
+    .menuP{
+        width: 40vw;
+        padding: 10px 0 10px 0;
+    }
+
     .full{
         width: 100vw;
         height: 90vh;
@@ -53,6 +90,24 @@ html{
         h1{
             text-align: center;
         }
+    }
+    
+    .half{
+        width: 100vw;
+        height: 65vh;
+    }
+
+    #acceuil{
+        padding-top: 20vh;
+        text-align: center;
+    }
+
+    #programme{
+        margin: auto;
+        border: 3px solid $couleur4;
+        border-radius: 10px;
+        width: 90vw;
+        padding-bottom: 20px;
     }
 
     #exercice{
@@ -96,6 +151,14 @@ html{
     h1{
         text-align: center;
         margin: 0;
-        color: $couleur1; 
+        color: $couleur1;
+    }
+
+    img{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        opacity: 0;
+        transition: 0.4s ease;
     }
 }
