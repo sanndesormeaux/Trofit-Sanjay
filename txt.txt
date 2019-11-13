@@ -1,0 +1,4 @@
+cordova = angular 
+
+ionic librairie graphique pour android 
+
