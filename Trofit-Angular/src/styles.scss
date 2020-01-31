@@ -2,15 +2,56 @@
 $couleur1 : #29201B;
 $couleur2 : #9E7D57;
 $couleur3 : #FFD584;
-$couleur4 :#33FF68;
+$couleur4 : #33FF68;
 
 $transition: 0.8s ease;
 
-html, body{
-    width: 100vw;
-    min-height: 100vh;
+html{
     background-color: $couleur1;
     margin: 0;
+    color: white;   
 
-    
+    body{
+        margin: 0;
+
+        .template{
+            min-height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            .btn{
+                width: 80%;
+                border: 2px solid $couleur4;
+                border-radius: 10px;
+                background-color: transparent;
+                color: $couleur4;
+                padding: 10px;
+                margin: 10px 0 10px 0;
+            }
+            .btn-high{
+                border-radius: 100px;
+                background-color: $couleur4;
+                color: $couleur1;
+                font-weight: bold;
+            }
+        }
+
+        h1{
+            color: $couleur4;
+        }
+        .exercices{
+            width: 100px;
+            height: 100px;
+            margin: 10px 0 10px 0;
+            border: 1px white solid;
+            border-radius: 200px;
+            display: flex;
+
+            h3{
+                margin: auto;
+            }
+        }
+    }
 }

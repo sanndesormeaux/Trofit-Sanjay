@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Trofit-Angular';
+
+  Burger() {
+    console.log('coucou');
+  }
+
 }
+
+
