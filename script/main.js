@@ -1,4 +1,4 @@
-var BMENU = true;
+    var BMENU = true;
 
 function Burger(){
     var B1 = document.getElementById("B1");
