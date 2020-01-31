@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+$couleur1 : #29201B;
+$couleur2 : #9E7D57;
+$couleur3 : #FFD584;
+$couleur4 :#33FF68;
+
+$transition: 0.8s ease;
+
+html, body{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $couleur1;
+    margin: 0;
+
+    
+}
