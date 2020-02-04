@@ -28,7 +28,16 @@ header{
             height: 5px;
             border-radius: 5px;
             background-color: $couleur4;
-            transition: 0.5s ease;
+            transition: 0.8s ease;
         }
     }
+}
+
+#Menu{
+    right: -100vw;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: $couleur4;
+    transition: 1.5s ease;
 }
