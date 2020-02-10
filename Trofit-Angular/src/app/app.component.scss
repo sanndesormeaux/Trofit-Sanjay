@@ -1,4 +1,5 @@
 $couleur4 :#33FF68;
+$couleur1 : #29201B;
 
 header{
     width: calc(100vw - 40px);
@@ -33,11 +34,35 @@ header{
     }
 }
 
-#Menu{
-    right: -100vw;
+
+#Menu-UP{
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: $couleur4;
-    transition: 1.5s ease;
+    overflow: hidden;
+    #Menu{
+        right: -100vw;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: $couleur4;
+        transition: 0.8s ease;
+        display: flex;
+
+        ul{
+            height: 60%;
+            margin: auto;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            li{
+                color: $couleur1;
+                font-size: 2em;
+                margin: 0;
+                list-style: none;
+            }
+        }
+    }
 }
