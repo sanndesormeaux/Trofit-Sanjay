@@ -9,8 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = 'Trofit-Angular';
   BurgerCheck = true;
+  previousId = 'MenuAcceuil';
 
-  Burger() {
+  burger() {
     const BurgerTile = [document.getElementById('B1'), document.getElementById('B2'), document.getElementById('B3')];
     const Menu = document.getElementById('Menu');
 
@@ -32,9 +33,20 @@ export class AppComponent implements OnInit {
       this.BurgerCheck = true;
     }
   }
+  
+  slideMenu(id) {
+    if (this.previousId !== id){
+      const firstID = document.getElementById(id).style;
+      const secondID = document.getElementById(this.previousId).style;
+      firstID.fontWeight = '800';
+      firstID.transform = 'scale(1.5)';
+      secondID.fontWeight = 'normal';
+      secondID.transform = 'scale(1)';
+      this.previousId = id;
+    }
+  }
 
   ngOnInit(): void {
-    //throw new Error('Method not implemented.');
   }
 
 }
