@@ -19,23 +19,25 @@ export class AppComponent implements OnInit {
       for (const index of BurgerTile) {
         index.style.backgroundColor = '#29201B';
       }
-      BurgerTile[0].style.transform = 'translate(0,0,0) rotate(45deg)';
+      BurgerTile[0].style.transform = 'rotate(45deg) translate(8px,6px)';
       BurgerTile[1].style.opacity = '0';
-      BurgerTile[2].style.transform = 'translate(0,0,0) rotate(-45deg)';
+      BurgerTile[2].style.transform = 'rotate(-45deg) translate(8px,-10px)';
       Menu.style.right = '0';
       this.BurgerCheck = false;
     } else {
       for (const index of BurgerTile) {
         index.style.backgroundColor = '#33FF68';
       }
+      BurgerTile[0].style.transform = 'rotate(0deg) translate(0,0)';
       BurgerTile[1].style.opacity = '1';
+      BurgerTile[2].style.transform = 'rotate(0deg) translate(0,0)';
       Menu.style.right = '-100vw';
       this.BurgerCheck = true;
     }
   }
-  
+
   slideMenu(id) {
-    if (this.previousId !== id){
+    if (this.previousId !== id) {
       const firstID = document.getElementById(id).style;
       const secondID = document.getElementById(this.previousId).style;
       firstID.fontWeight = '800';
@@ -47,8 +49,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.slideMenu('MenuAcceuil');
   }
-
 }
 
 

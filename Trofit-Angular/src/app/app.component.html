@@ -21,7 +21,11 @@
 
 <main>
   
-  <app-acceuil class="template"></app-acceuil>
+  <app-acceuil class="template" *ngIf="previousId === 'MenuAcceuil'"></app-acceuil>
+  <app-profil class="template" *ngIf="previousId === 'MenuProfil'"></app-profil>
+  <app-exercices class="template" *ngIf="previousId === 'MenuExercices'"></app-exercices>
+  <app-planning class="template" *ngIf="previousId === 'MenuPlanning'"></app-planning>
+  <app-succes class="template" *ngIf="previousId === 'MenuSucces'"></app-succes>
 </main>
 
 
