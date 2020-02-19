@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
 
   burger() {
     const BurgerTile = [document.getElementById('B1'), document.getElementById('B2'), document.getElementById('B3')];
+    const BurgerBox = document.getElementById('burger');
     const Menu = document.getElementById('Menu');
 
     if (this.BurgerCheck === true) {
@@ -22,6 +23,7 @@ export class AppComponent implements OnInit {
       BurgerTile[0].style.transform = 'rotate(45deg) translate(8px,6px)';
       BurgerTile[1].style.opacity = '0';
       BurgerTile[2].style.transform = 'rotate(-45deg) translate(8px,-10px)';
+      BurgerBox.style.transform = 'rotate(90deg)';
       Menu.style.right = '0';
       this.BurgerCheck = false;
     } else {
@@ -31,6 +33,7 @@ export class AppComponent implements OnInit {
       BurgerTile[0].style.transform = 'rotate(0deg) translate(0,0)';
       BurgerTile[1].style.opacity = '1';
       BurgerTile[2].style.transform = 'rotate(0deg) translate(0,0)';
+      BurgerBox.style.transform = 'rotate(0deg)';
       Menu.style.right = '-100vw';
       this.BurgerCheck = true;
     }
@@ -49,7 +52,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.slideMenu('MenuAcceuil');
+    this.slideMenu('MenuSucces');
   }
 }
 

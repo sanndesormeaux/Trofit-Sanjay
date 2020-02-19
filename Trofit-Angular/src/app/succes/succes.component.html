@@ -1,1 +1,9 @@
-<p>succes works!</p>
+<div class="boxSuccess"
+    *ngFor="let succes of succesTable"
+    [ngClass]="{
+        'Validate' : succes.currentGoal >= succes.goal
+        }">
+    <img [src]="succes.picture">
+    <h3>{{ succes.name }}</h3>
+    <span class="percent">100%</span>
+</div>
