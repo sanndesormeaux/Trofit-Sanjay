@@ -1,0 +1,8 @@
+{
+  "name": "Trofit",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
