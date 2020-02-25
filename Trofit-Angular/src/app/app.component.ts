@@ -20,9 +20,9 @@ export class AppComponent implements OnInit {
       for (const index of BurgerTile) {
         index.style.backgroundColor = '#29201B';
       }
-      BurgerTile[0].style.transform = 'rotate(45deg) translate(8px,6px)';
+      BurgerTile[0].style.transform = 'rotate(45deg) translate(0px,15px)';
       BurgerTile[1].style.opacity = '0';
-      BurgerTile[2].style.transform = 'rotate(-45deg) translate(8px,-10px)';
+      BurgerTile[2].style.transform = 'rotate(-45deg) translate(0px,-15px)';
       BurgerBox.style.transform = 'rotate(90deg)';
       Menu.style.right = '0';
       this.BurgerCheck = false;
@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.slideMenu('MenuSucces');
+    this.slideMenu('MenuAcceuil');
   }
 }
 
