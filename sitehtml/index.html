@@ -1,43 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trofit</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 </head>
 <body>
-    <!-- TEST -->
 
-    <div id="QCM">
-        <div class="slideQCM">
-            <h1>Bonjour, Afin d'optimiser les propostion d'exercice, veuillez répondre aux différentes questions.</h1>
-            <label for="taille">taille : </label>
-            <input type="text" id="taille">
-            <label for="poids">poids : </label>
-            <input type="text" id="poids">
-            <button onclick="continuer()"></button>
+    <nav>
+        <div id="pagetitre">TROFIT</div>
+        <div id="burger" onclick="Burger()">
+            <div class="Bu" id="B1"></div>
+            <div class="Bu" id="B2"></div>
+            <div class="Bu" id="B3"></div>
         </div>
-        <div class="slideQCM">
-            
-        </div>
-        <div class="slideQCM">
-            
-        </div>
-        <div class="slideQCM">
-            
-        </div>
-        <div class="slideQCM">
-            
-        </div>
+    </nav>
+    
+    <div id="ourspart">
+        <a href="pages/profil.html"><img src="media/ourshead.gif" id="ourshead"></a>
+        <div id="bubble">HEY! Bienvenue sur ton espace de divertissement sportif !</div>
     </div>
+    <div id="acceuil">
+        <div id="programme">
+            <h2>Prochaine séance</h2>
+            <h1>FESSIERS</h1>
+            <span>20 min</span>
+            <h3>GO !</h3>
+            <!--<div class="container">
+                <div class="circle-bouton">Fessier</div>
+                <div class="circle-bouton">Bras</div>
+            </div>-->
+        </div>
+        
+        <a href="pages/planning.html">
+            <div id="boutonplanning">
+                <img src="media/calendar.png"><span>Planning</span></div>
+            </div>
+        </a>
 
-    <script>
-        function continuer(){
+        <div id="nextsucces">
+            <img src="media/goal.png"> Succès à débloquer
+
+                <div class="nextdefi"> 
+                   <img src="media/stretching-exercises.png">
+                        <h3>Titre du succès</h3>
+                        <h4>100%</h4>
+                </div>
+
+
+
+                <div class="nextdefi"> 
+                   <img src="media/stretching-exercises.png">
+                        <h3>Titre du succès</h3>
+                        <h4>100%</h4>
+                </div>
             
-        }
-    </script>
+        
 
-    <!-- END TEST -->
+    </div>
+    <div id="footer-logo">
+        <img>
+    </div>
 </body>
 </html>
