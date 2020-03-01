@@ -1,3 +1,28 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<div id="Menu-UP">
+  <div id="Menu">
+    <ul>
+      <li id="MenuAcceuil" (click)="slideMenu('MenuAcceuil')">Accueil</li>
+      <li id="MenuProfil" (click)="slideMenu('MenuProfil')">Profil</li>
+      <li id="MenuPlanning" (click)="slideMenu('MenuPlanning')">Planning</li>
+      <li id="MenuExercices" (click)="slideMenu('MenuExercices')">Exercices</li>
+      <li id="MenuSucces" (click)="slideMenu('MenuSucces')">Succès</li>
+    </ul>
+  </div>
+</div>
+
+<header>
+  <img src="./../assets/ourshead1.png">
+  <div id="burger" (click)="burger()">
+    <div class="Bu" id="B1"></div>
+    <div class="Bu" id="B2"></div>
+    <div class="Bu" id="B3"></div>
+  </div>
+</header>
+
+<main>
+  <app-acceuil class="template" *ngIf="previousId === 'MenuAcceuil'"></app-acceuil>
+  <app-profil class="template" *ngIf="previousId === 'MenuProfil'"></app-profil>
+  <app-exercices class="template" *ngIf="previousId === 'MenuExercices'"></app-exercices>
+  <app-planning class="template" *ngIf="previousId === 'MenuPlanning'"></app-planning>
+  <app-succes class="template" *ngIf="previousId === 'MenuSucces'"></app-succes>
+</main>
