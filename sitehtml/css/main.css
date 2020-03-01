@@ -1,29 +1,242 @@
+@font-face {
+  font-family: "Dosis";
+  src: url("../fonts/Dosis-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Cocogoose";
+  src: url("../fonts/CocogoosePro-trial.ttf") format("truetype");
+}
 html {
+  padding: 0;
   overflow: hidden;
   overflow-y: scroll;
   background-color: #29201B;
   color: white;
   margin: 0;
-  padding: 0;
 }
 html body {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 0;
+  font-family: "Dosis";
+}
+html body nav {
+  height: 10vh;
+  display: flex;
+}
+html body nav #pagetitre {
+  left: 0;
+  align-items: center;
+  padding: 5%;
+  font-family: "Dosis";
+  font-size: 30px;
+  color: #33FF68;
+}
+html body #ourspart {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 12vh;
+}
+html body #ourspart #ourshead {
+  width: 65px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+html body #ourspart #bubble {
+  width: 60vw;
+  padding: 10px;
+  background-color: #FFD584;
+  border-radius: 15px;
+  position: absolute;
+  right: 5vw;
+  top: 10px;
+  color: black;
+}
+html a {
+  text-decoration: none;
+  color: white;
+}
+html .container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+html .container-col {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+html .circle-bouton {
+  border: 3px solid #33FF68;
+  border-radius: 100px;
+  height: 100px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-html body #title {
+html .bouton {
+  border: 3px solid #FFD584;
+  border-radius: 10px;
+  text-align: center;
+  width: 65vw;
+  margin: 5px auto 0 auto;
+  padding: 30px 0 30px 0;
+}
+html .spe {
+  color: #33FF68;
+  border-radius: 40px;
+}
+html .menuP {
+  width: 40vw;
+  padding: 10px 0 10px 0;
+}
+html .full {
+  width: 100vw;
+  height: 90vh;
+  justify-content: space-around;
+}
+html .full h1 {
   text-align: center;
 }
-html body #title h1 {
+html #boutonplanning {
+  color: #33FF68;
+  border-radius: 40px;
+  border: 3px solid #33FF68;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin: 5%;
+  padding: 5%;
+}
+html #boutonplanning img {
+  margin: 2%;
+  height: 60px;
+  width: 60px;
+}
+html #boutonplanning span {
+  font-size: 25px;
+  width: 100%;
+}
+html #nextsucces {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html #nextsucces img {
+  margin: 5%;
+  height: 60px;
+  width: 60px;
+}
+html #nextsucces .nextdefi {
+  width: 80%;
+  border: solid white 2px;
+  border-radius: 40px;
+  padding: 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 2.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+html #nextsucces .nextdefi img {
+  width: 30px;
+  height: 30px;
+}
+html #nextsucces .nextdefi h2 {
+  margin: 5%;
+}
+html #acceuil {
+  font-family: "Dosis";
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+html #programme {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #29201B;
+  margin: 5%;
+  border-radius: 30px;
+  width: 95vw;
+  padding-bottom: 20px;
+  background-color: #33FF68;
+}
+html #programme h2 {
+  background-color: #FFD584;
+}
+html #exercice {
+  padding-top: 5vh;
+  text-align: center;
+}
+
+#burger {
+  position: absolute;
+  padding: 5%;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#burger .Bu {
+  margin: 3px auto;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #33FF68;
+  transition: 1.5s;
+  z-index: 10;
+}
+
+#more {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #33FF68;
+  left: -100%;
+  transition: 0.8s ease;
+  z-index: 5;
+  display: flex;
+}
+#more h1 {
+  text-align: center;
+  margin: 0;
+  color: #29201B;
+}
+#more img {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+#title {
+  text-align: center;
+}
+#title h1 {
   width: auto;
   color: #33FF68;
 }
-html body #container1 {
+
+#container1 {
   padding: 5%;
 }
-html body #container1 a .blocs {
+#container1 a .blocs {
   width: 90%;
   height: 80px;
   border: solid #33FF68 2px;
@@ -34,24 +247,34 @@ html body #container1 a .blocs {
   justify-content: center;
   align-items: center;
 }
-html body #container1 a .blocs img {
+#container1 a .blocs img {
   width: 30px;
   height: 30px;
 }
-html body #container1 a .blocs h2 {
+#container1 a .blocs h2 {
   margin: 5%;
 }
-html body #return {
-  float: right;
-  border: solid #525252 1px;
-  height: 30px;
+
+#return {
+  border: solid white 2px;
   width: 50px;
-  margin: 4%;
-  line-height: 20px;
-  border-radius: 20px;
-  font-size: 40px;
+  height: 50px;
+  border-radius: 50px;
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-html body #photo {
+
+.pres {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  padding: 5%;
+}
+.pres #photo {
   background-color: #FFD584;
   border: solid #3333333b 2px;
   border-radius: 200px;
@@ -59,10 +282,10 @@ html body #photo {
   width: 200px;
   margin: auto;
 }
-html body #pseudo {
+.pres #pseudo {
   font-size: 40px;
 }
-html body #profil {
+.pres #profil {
   background-color: #29201B;
   border: solid #3333333b 2px;
   border-radius: 60px;
@@ -72,12 +295,12 @@ html body #profil {
   margin-top: 5%;
   margin-left: 80%;
 }
-html body .box-group {
+.pres .box-group {
   margin: auto;
   width: 95%;
   margin-top: 15%;
 }
-html body .box-group .large-box {
+.pres .box-group .large-box {
   background-color: #9E7D57;
   flex-direction: column;
   border: solid #3333333b 2px;
@@ -87,38 +310,33 @@ html body .box-group .large-box {
   width: 100%;
   margin-bottom: 10px;
 }
-html body .vide {
+.pres .vide {
   height: 200px;
 }
-html body .pres {
-  margin: auto;
-  padding: 5%;
-}
-html body .container-row {
-  margin: auto;
+.pres .container-row {
   display: flex;
   height: 70px;
   flex-direction: row;
   flex-basis: 100px;
 }
-html body .container-row .attribut {
-  padding: 5%;
+.pres .container-row .attribut {
+  padding: 2%;
   margin: auto;
 }
-html body .small-box {
+.pres .small-box {
   margin: auto;
   height: 20px;
   width: 70%;
   border: solid #525252 1px;
   border-radius: 15px;
 }
-html body #pref {
+.pres #pref {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   padding: 5%;
 }
-html body #pref .pref-box {
+.pres #pref .pref-box {
   margin: auto;
   border: solid #525252 1px;
   border-radius: 110px;
